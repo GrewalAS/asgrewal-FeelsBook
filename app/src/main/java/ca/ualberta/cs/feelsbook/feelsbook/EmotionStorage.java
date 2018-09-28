@@ -59,6 +59,7 @@ public class EmotionStorage {
      * not the List stays the same.
      */
     private void writeEmotionsToFile(){
+        /// TODO CITE
         try {
             // Getting the stream which will be used to write to file
             FileOutputStream fos = this.context.openFileOutput(this.fileName, MODE_PRIVATE);
@@ -82,6 +83,7 @@ public class EmotionStorage {
     }
 
     private void readEmotionsFromFile(){
+        /// TODO CITE
         try {
             // Getting ready to read from file
             FileInputStream fis = this.context.openFileInput(this.fileName);

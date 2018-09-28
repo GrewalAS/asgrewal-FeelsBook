@@ -3,13 +3,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".StatisticsActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="135dp"
-        android:layout_height="66dp"
-        android:text="Stats"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="108dp" />
+        android:id="@+id/emotionalStatistics"
+        android:layout_width="268dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/emotional_statistics"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/emotionsListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emotionalStatistics"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent" />
+    <!--Last two properties https://stackoverflow.com/questions/2907335/android-disabling-highlight-on-listview-click -->
+
 </android.support.constraint.ConstraintLayout>

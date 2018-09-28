@@ -2,6 +2,7 @@ package ca.ualberta.cs.feelsbook.feelsbook;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,7 +30,91 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
+    /**
+     * We need to override this function so this menu loads properly.
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Creating the menu options from the xml file
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
+    /**
+     * This is the function called when a menu item is selected in the app.
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
+        // Getting the id of the menu item selected
+        int id = item.getItemId();
+        // Executing code depending on which item is selected
+        switch (id){
+            case R.id.statistics:
+                // Need to show the statistics activity
+                // Creating the intent to start an activity
+                intent = new Intent(MainActivity.this, StatisticsActivity.class);
+                // Passing in the name of the file
+                intent.putExtra("fileName", this.storageFileName);
+                // Starting the activity
+                startActivity(intent);
+                return true;
+            case R.id.history:
+                // Need to show the history activity
+                // Creating the intent to start an activity
+                intent = new Intent(MainActivity.this, HistoryActivity.class);
+                // Passing in the name of the file
+                intent.putExtra("fileName", this.storageFileName);
+                // Starting the activity
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    /**
+     * Wiping out the storage class and the on click listeners when the activity goes on pause.
+     */
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+
+        // Creating an HashMap of string and button ids
+        final HashMap<String, Integer> emotionsHash = new HashMap<>();
+        //Adding emotions to array
+        emotionsHash.put("anger", R.id.anger);
+        emotionsHash.put("fear", R.id.fear);
+        emotionsHash.put("joy", R.id.joy);
+        emotionsHash.put("love", R.id.love);
+        emotionsHash.put("sadness", R.id.sadness);
+        emotionsHash.put("surprise", R.id.surprise);
+        // Iterating through the list
+        for (Object o : emotionsHash.entrySet()) {
+            final Map.Entry pair = (Map.Entry) o;
+            // Adding click listeners to buttons
+            // Getting the buttons
+            Button button = findViewById((Integer) pair.getValue());
+            // Deleting the click listener
+            button.setOnClickListener(null);
+        }
+        // Clearing emotion storage
+        this.emotionStorage = null;
+    }
+
+    /**
+     * I have decided to override this function and load everything required for the app to work properly here because Android does not make it easy
+     * to pass classes between activities, so we need to load the emotion storage each time this activity becomes the main activity again and unload
+     * the store when it another activity takes over.
+     */
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
         // Filling in values for members and reading the emotions from file
         this.emotionStorage = new EmotionStorage(getApplicationContext(), storageFileName);
 
@@ -99,46 +184,6 @@ public class MainActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
             });
-        }
-    }
-
-    /**
-     * We need to override this function so this menu loads properly.
-     */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Creating the menu options from the xml file
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.options_menu, menu);
-        return true;
-    }
-
-    /**
-     * This is the function called when a menu item is selected in the app.
-     */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent;
-        // Getting the id of the menu item selected
-        int id = item.getItemId();
-        // Executing code depending on which item is selected
-        switch (id){
-            case R.id.statistics:
-                // Need to show the statistics activity
-                // Creating the intent to start an activity
-                intent = new Intent(MainActivity.this, StatisticsActivity.class);
-                // Starting the activity
-                startActivity(intent);
-                return true;
-            case R.id.history:
-                // Need to show the history activity
-                // Creating the intent to start an activity
-                intent = new Intent(MainActivity.this, HistoryActivity.class);
-                // Starting the activity
-                startActivity(intent);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
         }
     }
 }
