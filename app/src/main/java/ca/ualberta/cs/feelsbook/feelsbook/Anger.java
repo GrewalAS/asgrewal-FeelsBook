@@ -1,10 +1,10 @@
 package ca.ualberta.cs.feelsbook.feelsbook;
 
+/**
+ * Class was created to store the Anger Emotion. Sub-class of Emotion. Only the constructors are
+ * defined, nothing else needs to be defined.
+ */
 public class Anger extends Emotion {
-    /**
-     * Class was created to store the Anger Emotion. Sub-class of Emotion. Only the constructors are
-     * defined, nothing else needs to be defined.
-     */
     // Nothing to declare
 
     /**

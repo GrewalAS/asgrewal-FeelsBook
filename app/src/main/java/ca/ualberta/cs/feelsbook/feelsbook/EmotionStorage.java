@@ -21,14 +21,14 @@ import java.util.List;
 
 import static android.content.Context.MODE_PRIVATE;
 
+/**
+ * This class was created to store all the emotions for the app, this is a data store. It will
+ * store the emotions as an ArrayList. It will add new emotions to the end of the array list.
+ * It will delete emotions from the array list. It will also sort the emotions from oldest to
+ * newest when new emotions are inserted, older ones are deleted or when existing emotions are
+ * edited. We can just use the string of the time stamp to sort due to its format.
+ */
 public class EmotionStorage {
-    /**
-     * This class was created to store all the emotions for the app, this is a data store. It will
-     * store the emotions as an ArrayList. It will add new emotions to the end of the array list.
-     * It will delete emotions from the array list. It will also sort the emotions from oldest to
-     * newest when new emotions are inserted, older ones are deleted or when existing emotions are
-     * edited. We can just use the string of the time stamp to sort due to its format.
-     */
     // Doesn't need to be accessed outside the class, so private.
     private ArrayList<Emotion> emotions;
     // This string does not need to be accessed by anyone else, so we keep it private
@@ -140,6 +140,20 @@ public class EmotionStorage {
         this.writeEmotionsToFile();
         // Now we need to update the emotion count
         this.updateEmotionCount();
+    }
+
+    /**
+     * Return the number of emotions that have been logged by the user.
+     */
+    public Integer getSizeOfEmotionsArray(){
+        return this.emotions.size();
+    }
+
+    /**
+     * Returns the emotion at a particular place in an array
+     */
+    public Emotion getEmotionAtPosition(int position){
+        return this.emotions.get(position);
     }
 
     /**

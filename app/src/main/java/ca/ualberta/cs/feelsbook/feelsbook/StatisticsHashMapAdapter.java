@@ -37,7 +37,6 @@ public class StatisticsHashMapAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        // TODO implement you own logic with ID
         return 0;
     }
 

@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+/**
+ * This activity was created to load the stats view for this app. It will shows the number of each emotion that has been saved/logged by the user.
+ */
 public class StatisticsActivity extends AppCompatActivity {
-    /**
-     * This activity was created to load the stats view for this app. It will shows the number of each emotion that has been saved/logged by the user.
-     */
 
     // Need to store the emotions
     private EmotionStorage emotionStorage;
@@ -34,7 +34,7 @@ public class StatisticsActivity extends AppCompatActivity {
         // Getting the value of all the emotion stats, creating and Adapter and setting it
         StatisticsHashMapAdapter adapter = new StatisticsHashMapAdapter(this.emotionStorage.getCountForAllEmotion());
         // Getting the list view
-        ListView listView = findViewById(R.id.emotionsListView);
+        ListView listView = findViewById(R.id.emotionsStatsListView);
         listView.setAdapter(adapter);
     }
 
@@ -47,7 +47,7 @@ public class StatisticsActivity extends AppCompatActivity {
         // Setting the emotionStorage to null. New instance is created onResume
         this.emotionStorage = null;
         // Getting rid of the adapter as well, will be set onResume again
-        ListView listView = findViewById(R.id.emotionsListView);
+        ListView listView = findViewById(R.id.emotionsStatsListView);
         listView.setAdapter(null);
     }
 }

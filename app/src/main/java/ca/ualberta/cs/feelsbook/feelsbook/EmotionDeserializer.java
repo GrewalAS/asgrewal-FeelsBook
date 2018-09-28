@@ -8,10 +8,10 @@ import com.google.gson.JsonParseException;
 
 import java.lang.reflect.Type;
 
+/**
+ * We created this class so that we can successfully deserializer emotion into their subclasses when reading from file.
+ */
 public class EmotionDeserializer implements JsonDeserializer<Emotion> {
-    /**
-     * We created this class so that we can successfully deserializer emotion into their subclasses when reading from file.
-     */
     @Override
     public Emotion deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         // First getting the JSON object

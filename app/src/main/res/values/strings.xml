@@ -14,4 +14,8 @@
     <string name="statistics">Statistics</string>
     <string name="emotional_statistics">Emotional Statistics</string>
     <string name="anger_count">Anger Count</string>
+    <string name="emotional_history">Emotional History</string>
+    <string name="title_activity_details_and_edit_emotion_activity">
+        details_and_edit_emotion_activity
+    </string>
 </resources>

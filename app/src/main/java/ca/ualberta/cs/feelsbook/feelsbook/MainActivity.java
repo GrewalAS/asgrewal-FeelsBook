@@ -14,12 +14,11 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Called on create of the activity, we will set it up so that tapping the buttons calls a
+ * method that will add the Emotion to the list of emotions that already exist.
+ */
 public class MainActivity extends AppCompatActivity {
-
-    /**
-     * Called on create of the activity, we will set it up so that tapping the buttons calls a
-     * method that will add the Emotion to the list of emotions that already exist.
-     */
 
     // We need to create a name for the file that is passed to EmotionStorage
     private String storageFileName = "EmotionStorage";
