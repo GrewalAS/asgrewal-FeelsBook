@@ -18,4 +18,10 @@
     <string name="title_activity_details_and_edit_emotion_activity">
         details_and_edit_emotion_activity
     </string>
+    <string name="title_activity_view_emotion_detail_and_edit_emotion">
+        ViewEmotionDetailAndEditEmotionActivity
+    </string>
+    <string name="title_activity_emotion">EmotionActivity</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
 </resources>

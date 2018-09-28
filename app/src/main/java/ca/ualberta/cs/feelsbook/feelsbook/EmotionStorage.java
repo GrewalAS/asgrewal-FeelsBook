@@ -58,7 +58,7 @@ public class EmotionStorage {
      * This method is also public since it might need to be called after an Emotion is updated but
      * not the List stays the same.
      */
-    private void writeEmotionsToFile(){
+    public void writeEmotionsToFile(){
         /// TODO CITE
         try {
             // Getting the stream which will be used to write to file
@@ -108,7 +108,7 @@ public class EmotionStorage {
      * Updates the emotion count after a new emotion has been added or deleted.
      */
     private void updateEmotionCount(){
-        // First we need to wipe the counts of emotions
+        // We need to wipe the counts of emotions
         this.countsOfEmotions = new HashMap<>();
         // Iterating through the list of emotions
         for (int i = 0; i < this.emotions.size(); i++) {
@@ -134,8 +134,8 @@ public class EmotionStorage {
     /**
      * Deletes the Emotion at a given index number
      */
-    public void deleteEmotion(int element_number){
-        emotions.remove(element_number);
+    public void deleteEmotionAtPosition(int position){
+        emotions.remove(position);
         // Writing to file after update
         this.writeEmotionsToFile();
         // Now we need to update the emotion count

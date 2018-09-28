@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".StatisticsActivity" />
         <activity android:name=".HistoryActivity" />
+        <activity android:name=".EmotionsDetailAndEditActivity"></activity>
     </application>
 
 </manifest>
