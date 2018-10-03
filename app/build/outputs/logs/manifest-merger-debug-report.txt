@@ -1,0 +1,182 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:design:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7dfcdcd899cad17221ff33ada4aa45c0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/429cf28fada6d2624f70a28b2a37c998/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c41bc40bc83397cfd2ae28541e69912b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e55a0862ab94004d374d914b85a0663/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/158aaa86fe88b9a0b809d4efc91895ab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/db6a29712cfb74f0b40325c2e86f6461/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/dfc56c573906c2d9a14ede6400d53edd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/960706c5075fccce1a4cba8995bc993c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/248327c3a4eeec78b69a8b356f3c7f72/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/27ea4ebae1fd6e0947dd58ecb8961030/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8c2896d482e72c38546449d4180927dd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/85668ebbd102b3d7fedfddcf814fe172/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/5c3b81987709682c0f5b42dcc75c64da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/af32cd7a03eaac2e12ed2f14a3cfe631/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2412ef778f90475aeffa83d830ab68d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2629c3cf28183c9f8ec1ca24d948e0c1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/da80cde123d9a5ab2f0474be6dcb9025/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dacc1bbebb073811ed42fa078dd6c845/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/54fba550f6607fc6586205b346803034/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8dcfc10c2bb9d89af00f8c77b87e95aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c12d4f3e9d00f69e7f8104746e9ea1a5/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5335fd87116d8c1c6483014b8f62b0be/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c326ca422c4e1a77d7b772803967ae98/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f019ebf70f1cbe4188aa13fb28ffae97/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/0e98eaa239939ec97236dd4959f62596/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/73d73539dabbaced478e1a18dc615635/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e1a0ec245b01e5e58a63c2a4cd7aee00/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/79e7bbab703d701e3c0054d58e908c29/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d81663197f5dcd92965b6384b71a7553/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b467de7119a08f0759e628f2811ee663/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/2eb37f96ff3f1fd1212b923c8ed50967/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:3:5-49
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:design:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7dfcdcd899cad17221ff33ada4aa45c0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7dfcdcd899cad17221ff33ada4aa45c0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c41bc40bc83397cfd2ae28541e69912b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c41bc40bc83397cfd2ae28541e69912b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c12d4f3e9d00f69e7f8104746e9ea1a5/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c12d4f3e9d00f69e7f8104746e9ea1a5/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c326ca422c4e1a77d7b772803967ae98/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c326ca422c4e1a77d7b772803967ae98/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c12d4f3e9d00f69e7f8104746e9ea1a5/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:11:9-40
+activity#ca.ualberta.cs.feelsbook.feelsbook.MainActivity
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:12:9-20:20
+	android:windowSoftInputMode
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:14:13-65
+	android:name
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:18:27-74
+activity#ca.ualberta.cs.feelsbook.feelsbook.StatisticsActivity
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:21:9-56
+	android:name
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:21:19-53
+activity#ca.ualberta.cs.feelsbook.feelsbook.HistoryActivity
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:22:9-53
+	android:name
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:22:19-50
+activity#ca.ualberta.cs.feelsbook.feelsbook.EmotionsDetailAndEditActivity
+ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:23:9-76
+	android:name
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml:23:19-64
+uses-sdk
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7dfcdcd899cad17221ff33ada4aa45c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7dfcdcd899cad17221ff33ada4aa45c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/429cf28fada6d2624f70a28b2a37c998/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/429cf28fada6d2624f70a28b2a37c998/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c41bc40bc83397cfd2ae28541e69912b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c41bc40bc83397cfd2ae28541e69912b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e55a0862ab94004d374d914b85a0663/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/0e55a0862ab94004d374d914b85a0663/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/158aaa86fe88b9a0b809d4efc91895ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/158aaa86fe88b9a0b809d4efc91895ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/db6a29712cfb74f0b40325c2e86f6461/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/db6a29712cfb74f0b40325c2e86f6461/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/dfc56c573906c2d9a14ede6400d53edd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/dfc56c573906c2d9a14ede6400d53edd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/960706c5075fccce1a4cba8995bc993c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/960706c5075fccce1a4cba8995bc993c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/248327c3a4eeec78b69a8b356f3c7f72/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/248327c3a4eeec78b69a8b356f3c7f72/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/27ea4ebae1fd6e0947dd58ecb8961030/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/27ea4ebae1fd6e0947dd58ecb8961030/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8c2896d482e72c38546449d4180927dd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8c2896d482e72c38546449d4180927dd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/85668ebbd102b3d7fedfddcf814fe172/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/85668ebbd102b3d7fedfddcf814fe172/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/5c3b81987709682c0f5b42dcc75c64da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/5c3b81987709682c0f5b42dcc75c64da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/af32cd7a03eaac2e12ed2f14a3cfe631/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/af32cd7a03eaac2e12ed2f14a3cfe631/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2412ef778f90475aeffa83d830ab68d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2412ef778f90475aeffa83d830ab68d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2629c3cf28183c9f8ec1ca24d948e0c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2629c3cf28183c9f8ec1ca24d948e0c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/da80cde123d9a5ab2f0474be6dcb9025/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/da80cde123d9a5ab2f0474be6dcb9025/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dacc1bbebb073811ed42fa078dd6c845/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dacc1bbebb073811ed42fa078dd6c845/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/54fba550f6607fc6586205b346803034/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/54fba550f6607fc6586205b346803034/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8dcfc10c2bb9d89af00f8c77b87e95aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8dcfc10c2bb9d89af00f8c77b87e95aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c12d4f3e9d00f69e7f8104746e9ea1a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c12d4f3e9d00f69e7f8104746e9ea1a5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5335fd87116d8c1c6483014b8f62b0be/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5335fd87116d8c1c6483014b8f62b0be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c326ca422c4e1a77d7b772803967ae98/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c326ca422c4e1a77d7b772803967ae98/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f019ebf70f1cbe4188aa13fb28ffae97/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f019ebf70f1cbe4188aa13fb28ffae97/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/0e98eaa239939ec97236dd4959f62596/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/0e98eaa239939ec97236dd4959f62596/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/73d73539dabbaced478e1a18dc615635/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/73d73539dabbaced478e1a18dc615635/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e1a0ec245b01e5e58a63c2a4cd7aee00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e1a0ec245b01e5e58a63c2a4cd7aee00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/79e7bbab703d701e3c0054d58e908c29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/79e7bbab703d701e3c0054d58e908c29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d81663197f5dcd92965b6384b71a7553/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d81663197f5dcd92965b6384b71a7553/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b467de7119a08f0759e628f2811ee663/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/b467de7119a08f0759e628f2811ee663/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/2eb37f96ff3f1fd1212b923c8ed50967/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/amrindergrewal/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/2eb37f96ff3f1fd1212b923c8ed50967/AndroidManifest.xml:20:5-44
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		ADDED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amrindergrewal/Computers/asgrewal-FeelsBook/app/src/main/AndroidManifest.xml
