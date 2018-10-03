@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,9 +22,9 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     // We need to create a name for the file that is passed to EmotionStorage
-    private String storageFileName = "EmotionStorage";
+    private String storageFileName = "EmotionStorageFile";
     // Where the emotions are stored
-    public EmotionStorage emotionStorage;
+    private EmotionStorage emotionStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
             // Adding the click listener
             button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
+                    boolean emotionCommentTooLongNotThrown = false;
                     // Getting the date
                     String date = dateText.getText().toString();
                     // Creating an emotion
@@ -170,17 +172,32 @@ public class MainActivity extends AppCompatActivity {
 
                     // Getting the comment
                     String comment = commentText.getText().toString();
-                    newEmotion.setComment(comment);
-                    // Adding to emotion storage
-                    MainActivity.this.emotionStorage.addEmotion(newEmotion);
+                    try {
+                        newEmotion.setComment(comment);
+                        emotionCommentTooLongNotThrown = true;
+                    } catch (EmotionCommentTooLong emotionCommentTooLong) {
+                        // Telling the user the comment was too long
+                        Toast.makeText(MainActivity.this, "Comment is more 100 characters long, please shorten the comment.",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                    if (emotionCommentTooLongNotThrown){
+                        // Adding to emotion storage
+                        try {
+                            MainActivity.this.emotionStorage.addEmotion(newEmotion);
+                        } catch (IOException e) {
+                            // Telling the user that emotions were not saved to file.
+                            Toast.makeText(MainActivity.this, "Emotion not written to file, something went wrong while trying to open file.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
 
-                    // Now we clear the date and comment fields
-                    commentText.setText("");
-                    dateText.setText(ISO8601.now());
+                        // Now we clear the date and comment fields
+                        commentText.setText("");
+                        dateText.setText(ISO8601.now());
 
-                    // Telling the user the emotion has been created
-                    Toast.makeText(MainActivity.this, (newEmotion.getEmotion() + " Emotion Logged"),
-                            Toast.LENGTH_SHORT).show();
+                        // Telling the user the emotion has been created
+                        Toast.makeText(MainActivity.this, (newEmotion.getEmotion() + " Emotion Logged"),
+                                Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
         }

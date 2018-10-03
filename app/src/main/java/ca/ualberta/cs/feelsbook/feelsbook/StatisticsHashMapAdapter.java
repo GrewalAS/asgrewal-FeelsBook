@@ -1,6 +1,3 @@
-/**
- * https://stackoverflow.com/questions/19466757/hashmap-to-listview
- */
 package ca.ualberta.cs.feelsbook.feelsbook;
 
 import android.view.LayoutInflater;
@@ -13,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * Class was fetched from https://stackoverflow.com/questions/19466757/hashmap-to-listview.
+ * Class was fetched from https://stackoverflow.com/questions/19466757/hashmap-to-listview by user Oleksii K.
  * It will act as the adapter between the HashMap of stats and the list used to display the stats.
  */
 

@@ -1,8 +1,9 @@
 package ca.ualberta.cs.feelsbook.feelsbook;
 
 /**
- * Code fetched from https://stackoverflow.com/questions/2201925/converting-iso-8601-compliant-string-to-java-util-date
- * Modify description because  "Z" tim is not supported anymore.
+ * Code fetched from https://stackoverflow.com/a/10621553 written by user wrygiel.
+ *
+ * This file has been modified by Amrinder Grewal to fit the needs of this Assignment better.
  */
 
 import java.text.ParseException;
@@ -13,9 +14,7 @@ import java.util.GregorianCalendar;
 
 /**
  * Helper class for handling a most common subset of ISO 8601 strings
- * (in the following format: "2008-03-01T13:00:00+01:00"). It supports
- * parsing the "Z" timezone, but many other less-used features are
- * missing.
+ * (in the following format: "2008-03-01T13:00:00+01:00").
  */
 
 public final class ISO8601 {

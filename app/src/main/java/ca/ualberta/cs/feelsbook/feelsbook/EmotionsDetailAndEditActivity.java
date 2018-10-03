@@ -1,14 +1,14 @@
 package ca.ualberta.cs.feelsbook.feelsbook;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.IOException;
 
 /**
  * This activity was created to load the Emotions deatails from the list and to let the user edit past emotion/delete them as well.
@@ -56,15 +56,31 @@ public class EmotionsDetailAndEditActivity extends AppCompatActivity {
         Button saveButton = findViewById(R.id.save);
         saveButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                boolean emotionCommentTooLongNotThrown = false;
                 // Getting the emotion
                 Emotion emotion = emotionStorage.getEmotionAtPosition(position);
                 // Saving the emotion data for the new data
-                emotion.setComment(commentView.getText().toString());
-                emotion.setDate(dateView.getText().toString());
-                // Telling the Emotion Storage to write data to file again.
-                emotionStorage.writeEmotionsToFile();
-                // Cleaning up the activity
-                EmotionsDetailAndEditActivity.this.finish();
+                try {
+                    emotion.setComment(commentView.getText().toString());
+                    emotionCommentTooLongNotThrown = true;
+                } catch (EmotionCommentTooLong emotionCommentTooLong) {
+                    // Telling the user the comment was too long
+                    Toast.makeText(EmotionsDetailAndEditActivity.this, "Comment is more 100 characters long, please shorten the comment.",
+                            Toast.LENGTH_SHORT).show();
+                }
+                if(emotionCommentTooLongNotThrown){
+                    emotion.setDate(dateView.getText().toString());
+                    // Telling the Emotion Storage to write data to file again.
+                    try {
+                        emotionStorage.writeEmotionsToFile();
+                    } catch (IOException e) {
+                        // Telling the user that emotions were not saved to file.
+                        Toast.makeText(EmotionsDetailAndEditActivity.this, "Emotion not written to file, something went wrong while trying to open file.",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                    // Cleaning up the activity
+                    EmotionsDetailAndEditActivity.this.finish();
+                }
             }
         });
 
@@ -73,9 +89,21 @@ public class EmotionsDetailAndEditActivity extends AppCompatActivity {
         deleteButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Deleting the emotion
-                emotionStorage.deleteEmotionAtPosition(position);
+                try {
+                    emotionStorage.deleteEmotionAtPosition(position);
+                } catch (IOException e) {
+                    // Telling the user that emotions were not saved to file.
+                    Toast.makeText(EmotionsDetailAndEditActivity.this, "Emotion not written to file, something went wrong while trying to open file.",
+                            Toast.LENGTH_SHORT).show();
+                }
                 // Telling the Emotion Storage to write data to file again.
-                emotionStorage.writeEmotionsToFile();
+                try {
+                    emotionStorage.writeEmotionsToFile();
+                } catch (IOException e) {
+                    // Telling the user that emotions were not saved to file.
+                    Toast.makeText(EmotionsDetailAndEditActivity.this, "Emotion not written to file, something went wrong while trying to open file.",
+                            Toast.LENGTH_SHORT).show();
+                }
                 // Cleaning up the activity
                 EmotionsDetailAndEditActivity.this.finish();
             }

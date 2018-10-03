@@ -5,8 +5,6 @@ package ca.ualberta.cs.feelsbook.feelsbook;
  * defined, nothing else needs to be defined.
  */
 public class Joy extends Emotion {
-
-
     /**
      * Constructor with date passed in. Calls super constructor that has date passed in.
      * Then sets the Emotion to Joy.

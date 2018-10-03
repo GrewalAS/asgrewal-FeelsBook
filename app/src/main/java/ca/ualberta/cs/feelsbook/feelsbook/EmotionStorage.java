@@ -16,8 +16,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -57,10 +58,14 @@ public class EmotionStorage {
      *
      * This method is also public since it might need to be called after an Emotion is updated but
      * not the List stays the same.
+     *
+     * This function was heavily influenced by a similar function in the LonelyTwitter app used
+     * to demonstrate concepts in class.
      */
-    public void writeEmotionsToFile(){
-        /// TODO CITE
+    public void writeEmotionsToFile() throws IOException {
         try {
+            // Before anything, we need to sort the list of emotions by date
+            this.sortEmotionsByDate();
             // Getting the stream which will be used to write to file
             FileOutputStream fos = this.context.openFileOutput(this.fileName, MODE_PRIVATE);
 
@@ -74,16 +79,19 @@ public class EmotionStorage {
             // Closing File
             fos.close();
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            throw new FileNotFoundException();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            throw new IOException();
         }
     }
 
+    /**
+     * This methods reads emotions from a file and stores them in an array.
+     *
+     * This function was heavily influenced by a similar function in the LonelyTwitter app used
+     * to demonstrate concepts in class.
+     */
     private void readEmotionsFromFile(){
-        /// TODO CITE
         try {
             // Getting ready to read from file
             FileInputStream fis = this.context.openFileInput(this.fileName);
@@ -99,7 +107,6 @@ public class EmotionStorage {
             }
 
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
             emotions = new ArrayList<>();
         }
     }
@@ -110,6 +117,13 @@ public class EmotionStorage {
     private void updateEmotionCount(){
         // We need to wipe the counts of emotions
         this.countsOfEmotions = new HashMap<>();
+        // Init the counts of emotions
+        countsOfEmotions.put("Anger", 0);
+        countsOfEmotions.put("Fear", 0);
+        countsOfEmotions.put("Joy", 0);
+        countsOfEmotions.put("Love", 0);
+        countsOfEmotions.put("Sadness", 0);
+        countsOfEmotions.put("Surprise", 0);
         // Iterating through the list of emotions
         for (int i = 0; i < this.emotions.size(); i++) {
             // This will get the type of the emotion
@@ -122,7 +136,7 @@ public class EmotionStorage {
     /**
      * Adds a new Emotion the emotions array
      */
-    public void addEmotion(Emotion newEmotion){
+    public void addEmotion(Emotion newEmotion) throws IOException {
         // Adding to array
         this.emotions.add(newEmotion);
         // Writing to file after update
@@ -134,7 +148,7 @@ public class EmotionStorage {
     /**
      * Deletes the Emotion at a given index number
      */
-    public void deleteEmotionAtPosition(int position){
+    public void deleteEmotionAtPosition(int position) throws IOException {
         emotions.remove(position);
         // Writing to file after update
         this.writeEmotionsToFile();
@@ -160,4 +174,17 @@ public class EmotionStorage {
      * Returns the count for an emotion
      */
     public HashMap<String, Integer> getCountForAllEmotion() { return this.countsOfEmotions; }
+
+    /**
+     * This method will sort the emotions stored in this class using their date. It will be called
+     * before we call writeEmotionsToFile.
+     */
+    private void sortEmotionsByDate(){
+        Collections.sort(this.emotions, new Comparator<Emotion>() {
+            @Override
+            public int compare(Emotion o1, Emotion o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+    }
 }

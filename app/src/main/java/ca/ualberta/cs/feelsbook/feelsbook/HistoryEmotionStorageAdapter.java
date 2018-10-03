@@ -47,7 +47,7 @@ public class HistoryEmotionStorageAdapter extends BaseAdapter {
 
     /**
      * Gives a view back that is populated by the information that we need to display.
-     * Influenced by: https://stackoverflow.com/questions/19466757/hashmap-to-listview
+     * Influenced by: https://stackoverflow.com/a/31752281 by user named Zanna
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

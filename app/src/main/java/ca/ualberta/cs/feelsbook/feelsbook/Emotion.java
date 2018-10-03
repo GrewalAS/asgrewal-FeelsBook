@@ -1,12 +1,13 @@
 package ca.ualberta.cs.feelsbook.feelsbook;
 
+/**
+ * This class was created as sort of a model for emotions to inherit from. An instance of this
+ * class will never exist, only subclasses will ever be created.
+ * This is not an interface because we do want the sub-classes to inherit some of the method
+ * that will be the same in every one of the sub-classes of this class.
+ */
+
 public abstract class Emotion {
-    /**
-     * This class was created as sort of a model for emotions to inherit from. An instance of this
-     * class will never exist, only subclasses will ever be created.
-     * This is not an interface because we do want the sub-classes to inherit some of the method
-     * that will be the same in every one of the sub-classes of this class.
-     */
     // Date can be private since no methods outside of this class should mess with it.
     private String date;
     // Emotion can be private because no methods outside of this class should mess with it.
@@ -18,7 +19,7 @@ public abstract class Emotion {
      * Constructor for this class, this class does not take any arguments, if this constructor
      * is called, an Emotion with the current date and time will be created.
      */
-    protected Emotion(){
+    public Emotion(){
         // Calling another constructor with a newly generated date
         this(ISO8601.now());
     }
@@ -27,7 +28,7 @@ public abstract class Emotion {
      * Another Constructor for this class. Assigns the date passed in to member variable called
      * date.
      */
-    protected Emotion(String date){
+    public Emotion(String date){
         this.date = date;
     }
 
@@ -64,8 +65,14 @@ public abstract class Emotion {
     /**
      * Method for setting a new comment to this value.
      */
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setComment(String comment) throws EmotionCommentTooLong {
+        // We need to confirm the length of the comment is not too long
+        if (comment.length() <= 100) {
+            this.comment = comment;
+        } else {
+            // Throwing an exception because the comment passed in was too long.
+            throw new EmotionCommentTooLong();
+        }
     }
 
     /**
@@ -73,5 +80,15 @@ public abstract class Emotion {
      */
     public String getComment() {
         return this.comment;
+    }
+}
+
+/**
+ * A new type of exception is created here that we will throw when a comment that is too long is
+ * passed into the setComment meothod of Emotion
+ */
+class EmotionCommentTooLong extends Exception {
+    public EmotionCommentTooLong(){
+        super("Comment too long.");
     }
 }
