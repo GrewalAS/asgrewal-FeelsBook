@@ -16,3 +16,4 @@ The following sources were consulted while completing this assignment:
   * wrygiel, Converting ISO 8601-compliant String to java.util.Date, https://stackoverflow.com/a/10621553
   * Oleksii K., HashMap to ListView, https://stackoverflow.com/questions/19466757/hashmap-to-listview
   * Joshua Charles Campbell(joshua2ua), lonelyTwitter, https://github.com/joshua2ua/lonelyTwitter
+  * Jiri Kremser, Sameer Kazi, Sort a Java collection object based on one field in it, https://stackoverflow.com/a/12542755
