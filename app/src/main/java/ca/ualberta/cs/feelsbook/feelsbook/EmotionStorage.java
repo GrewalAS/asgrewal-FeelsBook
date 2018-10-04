@@ -178,6 +178,7 @@ public class EmotionStorage {
     /**
      * This method will sort the emotions stored in this class using their date. It will be called
      * before we call writeEmotionsToFile.
+     * Fetched from https://stackoverflow.com/questions/12542185/sort-a-java-collection-object-based-on-one-field-in-it
      */
     private void sortEmotionsByDate(){
         Collections.sort(this.emotions, new Comparator<Emotion>() {
