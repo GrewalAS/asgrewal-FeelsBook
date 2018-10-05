@@ -6,6 +6,11 @@ asgrewal-FeelsBook is a simple app which lets the user record their emotions at 
 
 The spec for this program can be found at the following URL: https://eclass.srv.ualberta.ca/mod/assign/view.php?id=3186785
 
+## Notice to TAs
+If you encounter an error which stops the installation of the app onto the Android Emulator, please follow these steps.
+1. Go to "Build"->Click "Rebuild Project"
+2. Go to "Run"->Click "Run 'app'"
+
 ## Acknowledgements 
 The following sources were consulted while completing this assignment:
   * Abram Hindle, Student Picker for Android: 1 Storyboarding an Android Application, https://www.youtube.com/watch?v=5PPD0ncJU1g&feature=youtu.be
